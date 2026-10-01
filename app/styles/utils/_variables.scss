@@ -1,0 +1,58 @@
+/*----- Colors -----*/
+
+$gray-darkest           : #333;
+$gray-darker            : #666;
+$gray-dark              : #999;
+$gray                   : #ccc;
+$gray-light             : #ddd;
+$gray-lighter           : #eee;
+$gray-lightest          : #f8f8f8;
+
+$slate-gray             : #39424B;
+$slate-green            : #56817A;
+$dazn-yellow            : #f7ff1a; 
+$miro-yellow            : #f5c425;
+$booking-blue           : #092983; 
+$shell-blue             : #248A99; 
+$tui-red                : #E70006;
+$chloe-lilac            : #c8a2c8; 
+$nn-orange              : #f44e0e;
+$mollie-black           : #000000; 
+$fivetran-blue          : #1966fe;
+$evbox-blue             : #42baea;
+$adyen-green            : #31B742;
+$warner-blue            : #060058;
+$signify-green          : #3DE583;
+$ah-blue                : #299CE0; 
+$midtronic-blue         : #0D64B3;
+$odido-orange           : #F7B242;
+
+
+$primary-color          : $adyen-green;
+$secondary-color        : $slate-gray;
+
+$link-color             : #2895F1;
+
+/*----- Fonts -----*/
+
+$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
+$secondary-font             : 'Montserrat', Helvetica, Arial, sans-serif;
+
+/*----- Dimensions and sizes -----*/
+
+$print-width            : 21cm;
+$print-height           : 29.7cm;
+$page-width             : 612px;
+$page-height            : 792px;
+
+$mobile-width           : 435px;
+$tablet-width           : 768px;
+$laptop-width           : 992px;
+$desktop-width          : 1200px;
+$retina-width           : 1920px;
+
+$font-unit              : 4px;
+$profile-pic-size       : 52px;
+$aside-width            : 160px;
+$aside-margin           : 20px;
+$pad-unit               : 5px;
