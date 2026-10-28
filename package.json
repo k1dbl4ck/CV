@@ -28,8 +28,7 @@
   "scripts": {
     "setup": "./setup.sh",
     "build_theme": "npx gulp",
-    "build_resume": "resume export resume-test.pdf --theme . -r resume-test.json"
-  },
+    "build_resume": "PUPPETEER_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' ../resume-cli/build/main.js export resume-test.pdf --theme . -r resume-em.json"  },
   "engines": {
     "node": ">=14.0.0"
   },
