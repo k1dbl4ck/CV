@@ -43,6 +43,13 @@ handlebars.registerHelper({
 
   formatDate: function (date) {
     return moment(date).format('MM/YYYY');
+  },
+
+  skillGroup: function (skills, group) {
+    if (!Array.isArray(skills)) {
+      return [];
+    }
+    return skills.filter((skill) => (skill.group || 'worked-with') === group);
   }
 });
 

@@ -1,10 +1,11 @@
 import gulp from "gulp";
 import cache from "gulp-cache";
 import imagemin from "gulp-imagemin";
+import { dest, src } from "../paths.js";
 
 gulp.task("images", function () {
   return gulp
-    .src("app/images/**/*")
+    .src(src.images, { allowEmpty: true })
     .pipe(
       cache(
         imagemin({
@@ -13,5 +14,5 @@ gulp.task("images", function () {
         })
       )
     )
-    .pipe(gulp.dest("public/images"));
+    .pipe(gulp.dest(dest.images));
 });

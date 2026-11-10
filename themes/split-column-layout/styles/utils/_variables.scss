@@ -10,27 +10,22 @@ $gray-lightest          : #f8f8f8;
 
 $slate-gray             : #39424B;
 $slate-green            : #56817A;
-$dazn-yellow            : #f7ff1a; 
-$miro-yellow            : #f5c425;
-$booking-blue           : #092983; 
-$shell-blue             : #248A99; 
-$tui-red                : #E70006;
-$chloe-lilac            : #c8a2c8; 
-$nn-orange              : #f44e0e;
-$mollie-black           : #000000; 
-$fivetran-blue          : #1966fe;
-$evbox-blue             : #42baea;
-$adyen-green            : #31B742;
-$warner-blue            : #060058;
-$signify-green          : #3DE583;
-$ah-blue                : #299CE0; 
-$midtronic-blue         : #0D64B3;
-$odido-orange           : #F7B242;
-$jet-orange             : #FF8000;
+
+$gradient-start: #FCBF44;
+$gradient-middle: #F37848;
+$gradient-end: #F274B2;
 
 
-$primary-color          : $jet-orange;
+
+$primary-color          : $gradient-middle;
 $secondary-color        : $slate-gray;
+
+$page-border-top-width  : 10px;
+$page-border-top-color  : $primary-color;
+// Set all three to use a left → middle → right gradient instead of a solid bar.
+$page-border-top-left   : $gradient-start;
+$page-border-top-middle : $gradient-middle;
+$page-border-top-right  : $gradient-end;
 
 $link-color             : #2895F1;
 

@@ -1,9 +1,11 @@
 import gulp from 'gulp';
+import { dest, src } from '../paths.js';
 
 gulp.task('extras', function () {
   return gulp.src([
-    'app/*.*'
+    src.extras
   ], {
-    dot: true
-  }).pipe(gulp.dest('public'));
+    dot: true,
+    allowEmpty: true
+  }).pipe(gulp.dest(dest.root));
 });

@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import browserSync from "browser-sync";
 import log from "fancy-log";
+import { dest, src } from "../paths.js";
 
 const bs = browserSync.create();
 
@@ -22,15 +23,15 @@ gulp.task("watch", function () {
 
     // watch for changes
     gulp
-      .watch(["public/**/*", "app/styles/**/*.scss", "resume.json"])
+      .watch([`${dest.root}/**/*`, src.stylesAll, "resume.json"])
       .on("change", () => {
         log("test");
         // browserSync.reload;
       });
 
-    gulp.watch("app/views/**/*.hbs", ["html"]).on("change", bs.reload);
-    gulp.watch("app/images/**/*", ["images"]).on("change", bs.reload);
-    gulp.watch("app/styles/**/*.scss", ["styles"]).on("change", () => {
+    gulp.watch(src.views, ["html"]).on("change", bs.reload);
+    gulp.watch(src.images, ["images"]).on("change", bs.reload);
+    gulp.watch(src.stylesAll, ["styles"]).on("change", () => {
       log("poop");
       // browserSync.reload;
     });

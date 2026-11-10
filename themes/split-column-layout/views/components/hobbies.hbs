@@ -1,0 +1,13 @@
+{{#if resume.hobbies.length}}
+<div class="container hobbies-container">
+  {{> title value="Hobbies"}}
+
+  <ul class="minimal">
+    {{#each resume.hobbies}}
+    <li>
+      <h6>{{.}}</h6>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+{{/if}}

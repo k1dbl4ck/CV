@@ -22,15 +22,17 @@
     "handlebars-wax": "^6.1.0",
     "lazypipe": "^1.0.2",
     "moment": "^2.31.0",
+    "puppeteer": "^23.11.1",
     "sass": "^1.105.1",
     "swag": "^0.7.0"
   },
   "scripts": {
     "setup": "./setup.sh",
-    "build_theme": "npx gulp",
-    "build_resume": "PUPPETEER_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' ../resume-cli/build/main.js export resume-test.pdf --theme . -r resume-em.json"  },
+    "build_theme": "sh -c 'THEME=\"${1:-split-column-layout}\" npx gulp' --",
+    "build_resume": "PUPPETEER_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' node scripts/export-resume.js"
+  },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "@types/gulp-load-plugins": "^0.0.37"

@@ -1,0 +1,53 @@
+{{#with (skillGroup resume.skills "core")}}
+{{#if this.length}}
+<div class="skills-container container">
+  {{> title value="Core Skills"}}
+  {{#each this}}
+  <section class="container">
+    {{#if name}}
+      {{> subtitle value=name}}
+    {{/if}}
+    {{#if level}}
+      <h4 class="bold">{{level}}</h4>
+    {{/if}}
+    {{#if keywords.length}}
+      <ul class="minimal">
+        {{#each keywords}}
+        <li>
+          <h7>{{.}}</h7>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </section>
+  {{/each}}
+</div>
+{{/if}}
+{{/with}}
+
+{{#with (skillGroup resume.skills "worked-with")}}
+{{#if this.length}}
+<div class="skills-container container">
+  {{> title value="Worked with"}}
+  {{#each this}}
+  <section class="container">
+    {{#if name}}
+      {{> subtitle value=name}}
+    {{/if}}
+    {{#if level}}
+      <h4 class="bold">{{level}}</h4>
+    {{/if}}
+    {{#if keywords.length}}
+      <ul class="minimal">
+        {{#each keywords}}
+        <li>
+          <h7>{{.}}</h7>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </section>
+  {{/each}}
+</div>
+{{/if}}
+{{/with}}

@@ -1,0 +1,46 @@
+.page {
+  background: white;
+  width: $page-width;
+  min-height: $page-height;
+  display: block;
+  margin: 0 auto;
+  padding: 36px 22px 30px 34px;
+  @include shadow();
+  @include clearfix();
+
+  @if $page-border-top-left and $page-border-top-middle and $page-border-top-right {
+    border-top: $page-border-top-width solid transparent;
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(
+        to right,
+        $page-border-top-left,
+        $page-border-top-middle,
+        $page-border-top-right
+      );
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+  } @else {
+    border-top: $page-border-top-width solid $page-border-top-color;
+  }
+}
+
+.left-column {
+  float: left;
+  width: $aside-width;
+  margin-right: $aside-margin;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: spacing(3);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
