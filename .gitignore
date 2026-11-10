@@ -1,3 +1,8 @@
 node_modules
 public/
 *.pdf
+
+# Personal resume JSON (keep the dummy sample in git)
+resume.json
+resume-*.json
+!resume-sample.json
