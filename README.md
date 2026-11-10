@@ -24,7 +24,6 @@ Themes are folders under `themes/`. Gulp compiles one theme at a time into `publ
 ```bash
 npm run build_theme
 npm run build_theme -- split-column-layout
-npm run build_theme -- single-column-layout
 ```
 
 The default theme is `split-column-layout`.
