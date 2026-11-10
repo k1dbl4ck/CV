@@ -1,0 +1,204 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "John Doe",
+    "label": "Software Engineer",
+    "email": "john.doe@example.com",
+    "phone": "+1 (555) 010-0199",
+    "picture": "",
+    "summary": "Software engineer with 8+ years of experience building backend services and product-facing web applications. Comfortable owning features end to end: design, implementation, testing, and production support. Interested in well-factored systems, readable code, and helping teams ship reliably.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Austin",
+      "countryCode": "US",
+      "region": "Texas"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alex-rivera",
+        "url": "https://www.linkedin.com/in/example-alex-rivera/"
+      },
+      {
+        "network": "GitHub",
+        "username": "alexrivera",
+        "url": "https://github.com/example"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Northwind Analytics",
+      "location": "Austin, US",
+      "description": "Senior Software Engineer",
+      "position": "Senior Software Engineer",
+      "url": "https://example.com",
+      "startDate": "2022-03-01",
+      "summary": "Backend engineer on the customer platform team, building APIs and data pipelines that power a B2B analytics product.",
+      "highlights": [
+        "<b>Owned billing APIs:</b> Designed and shipped REST services for subscription and usage billing, including idempotent retries and audit logging.",
+        "<b>Cut p95 latency:</b> Replaced N+1 query paths with batched reads and Redis caching, reducing p95 API latency from 420ms to 110ms.",
+        "<b>Improved delivery:</b> Introduced contract tests and GitHub Actions checks that caught breaking API changes before merge.",
+        "<b>Mentored engineers:</b> Pair-programmed with two mid-level engineers and ran weekly design reviews for the team."
+      ]
+    },
+    {
+      "name": "Harborline",
+      "location": "Remote",
+      "description": "Software Engineer",
+      "position": "Software Engineer",
+      "url": "https://example.com",
+      "startDate": "2019-06-01",
+      "endDate": "2022-02-28",
+      "summary": "Full-stack engineer on a logistics SaaS product used by warehouse and last-mile operations teams.",
+      "highlights": [
+        "<b>Shipped the dispatch board:</b> Built a React + TypeScript UI backed by Node.js services for real-time job assignment.",
+        "<b>Event-driven updates:</b> Added a small Kafka consumer path so the UI reflected status changes without polling.",
+        "<b>Database work:</b> Modeled order and stop tables in Postgres, including migrations and query tuning for the busiest screens.",
+        "<b>On-call:</b> Participated in a weekly on-call rotation and wrote runbooks for the most common production incidents."
+      ]
+    },
+    {
+      "name": "PixelForge",
+      "location": "Denver, US",
+      "description": "Junior Software Engineer",
+      "position": "Junior Software Engineer",
+      "url": "https://example.com",
+      "startDate": "2016-08-01",
+      "endDate": "2019-05-31",
+      "summary": "Worked on internal tools and a customer-facing marketing site for a digital studio.",
+      "highlights": [
+        "<b>Internal admin tools:</b> Built CRUD dashboards in JavaScript and Python for project tracking and asset management.",
+        "<b>Automated deploys:</b> Replaced manual FTP releases with a simple CI pipeline to staging and production.",
+        "<b>Bug fixing:</b> Triaged and resolved production issues across the marketing site and CMS integrations."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "State University",
+      "url": "https://example.edu",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2012-09",
+      "endDate": "2016-05",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "group": "core",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Languages",
+      "group": "worked-with",
+      "keywords": [
+        "Go",
+        "Java",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Frameworks & Runtimes",
+      "group": "core",
+      "keywords": [
+        "Node.js",
+        "React",
+        "Express"
+      ]
+    },
+    {
+      "name": "Frameworks & Runtimes",
+      "group": "worked-with",
+      "keywords": [
+        "Django",
+        "Next.js"
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "group": "core",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "group": "worked-with",
+      "keywords": [
+        "GCP",
+        "Kubernetes",
+        "Nginx"
+      ]
+    },
+    {
+      "name": "Data & Integration",
+      "group": "core",
+      "keywords": [
+        "Postgres",
+        "Redis",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Data & Integration",
+      "group": "worked-with",
+      "keywords": [
+        "Kafka",
+        "MongoDB",
+        "gRPC"
+      ]
+    },
+    {
+      "name": "CI/CD & Quality",
+      "group": "core",
+      "keywords": [
+        "GitHub Actions",
+        "Jest",
+        "Playwright"
+      ]
+    },
+    {
+      "name": "CI/CD & Quality",
+      "group": "worked-with",
+      "keywords": [
+        "Jenkins",
+        "SonarQube"
+      ]
+    }
+  ],
+  "hobbies": [
+    "Hiking",
+    "Home cooking",
+    "Board games",
+    "Amateur photography"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-11-10T00:00:00"
+  }
+}
